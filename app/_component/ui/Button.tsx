@@ -1,6 +1,8 @@
 'use client';
 import { motion } from 'motion/react';
-import { MdArrowOutward } from 'react-icons/md';
+import { useState } from 'react';
+import { GoArrowUpRight } from 'react-icons/go';
+import { MdArrowRightAlt } from 'react-icons/md';
 
 type PropsButton = {
   className?: string;
@@ -12,20 +14,31 @@ export default function Button({
   text,
   withArrow = false,
 }: PropsButton) {
+  const [Hover, setHover] = useState(false);
   return (
     <>
       <button className={`rounded-[6.4px] px-4 py-2 ${className} `}>
-        {text}
-        {withArrow && (
-          <motion.span
-            initial={{ x: 0, y: 0 }}
-            whileHover={{ x: 0, y: 6 }}
-            transition={{ duration: 0.3 }}
-            className="inline-block"
-          >
-            <MdArrowOutward />
-          </motion.span>
-        )}
+        <motion.p
+          className=""
+          whileHover={{
+            y: [0, -10, 10, 0],
+            opacity: [1, 0, 0, 1],
+          }}
+          transition={{
+            duration: 0.8,
+            ease: 'easeInOut',
+          }}
+          onHoverStart={() => setHover(true)}
+          onHoverEnd={() => setHover(false)}
+        >
+          {text}
+          {withArrow &&
+            (Hover ? (
+              <MdArrowRightAlt className="inline-block h-[16px] w-[16px]" />
+            ) : (
+              <GoArrowUpRight className="inline-block h-[16px] w-[16px]" />
+            ))}
+        </motion.p>
       </button>
     </>
   );

@@ -15,14 +15,17 @@ export default function NavLinks() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="relative md:hidden">
+      <div className="flex md:hidden">
         {open && (
-          <ul className="absolute top-16 right-[580px] flex w-full flex-col items-start gap-4 md:hidden">
+          <ul className="absolute top-16 left-10 flex w-full flex-col gap-4 md:hidden">
             {links.map((link) => (
               <NavLi key={link.label} href={link.href} link={link.label} />
             ))}
-
-            <Button text={'Book a call'} className={'bg-[#814AC8]'} />
+            <Button
+              text={'Book a call'}
+              className={'mr-8 bg-[#814AC8]'}
+              withArrow
+            />
           </ul>
         )}
       </div>

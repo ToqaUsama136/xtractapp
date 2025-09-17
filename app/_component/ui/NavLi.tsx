@@ -1,5 +1,4 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
 
 type Props = {
   href: string;
@@ -8,7 +7,7 @@ type Props = {
 export default function NavLi({ href, link }: Props) {
   return (
     <>
-      <li>
+      <li className="mx-auto w-full">
         <Link href={href}>{link}</Link>
       </li>
     </>
