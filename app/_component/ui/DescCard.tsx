@@ -6,9 +6,9 @@ type Props = {
   p2: string;
   button2: string;
   button3: string;
-  button4: string;
+  button4?: string;
 };
-export default function DescTitle({
+export default function DescCard({
   button1,
   p1,
   p2,
@@ -30,10 +30,12 @@ export default function DescTitle({
           text={button3}
           className={'tex-[12px] mx-2 border border-[#a3a3a3b0]'}
         />
-        <Button
-          text={button4}
-          className={'tex-[12px] border border-[#a3a3a3b0]'}
-        />
+        {button4 && (
+          <Button
+            text={button4}
+            className={'tex-[12px] border border-[#a3a3a3b0]'}
+          />
+        )}
       </div>
     </div>
   );

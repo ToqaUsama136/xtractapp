@@ -1,5 +1,7 @@
 import TitleCard from '../ui/TitleCard';
 import AiAssiss from './(ServicesCards)/AiAssiss';
+import CustomProject from './(ServicesCards)/CustomProject';
+import SalesMarketing from './(ServicesCards)/SalesMarketing';
 import WorkFlow from './(ServicesCards)/WorkFlow';
 import Hero from './Hero';
 import Logos from './Logos';
@@ -16,8 +18,9 @@ export default function Landing() {
           smarter, not harder"
       />
       <WorkFlow />
-
       <AiAssiss />
+      <SalesMarketing />
+      <CustomProject />
     </div>
   );
 }
