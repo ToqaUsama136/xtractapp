@@ -1,6 +1,6 @@
 import { CiDollar } from 'react-icons/ci';
 import { MdOutlineWatchLater } from 'react-icons/md';
-export default function Card() {
+export default function CardWorkFlow() {
   return (
     <div className="flex rounded-[6px] border border-[#a3a3a3b0] px-4">
       <div className="flex items-center px-1">

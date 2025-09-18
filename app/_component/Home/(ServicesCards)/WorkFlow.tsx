@@ -1,10 +1,10 @@
-import Button from '../ui/Button';
+import Button from '../../ui/Button';
 import WorkFlowCard1 from './WorkFlowCard1';
 
 export default function WorkFlow() {
   return (
-    <section className="px-[80px] py-[40px]">
-      <div className="flex gap-[20px]">
+    <section className="px-[20px] py-[40px] lg:px-[80px]">
+      <div className="flex flex-col items-center justify-center gap-[20px] md:flex-row lg:gap-[80px]">
         <div className="max-w-[450px] flex-1">
           <WorkFlowCard1 />
         </div>

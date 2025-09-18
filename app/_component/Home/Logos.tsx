@@ -8,7 +8,7 @@ export default function Logos() {
         <p className="py-4 text-center">Over 50+ business trust us</p>
         <div className="flex w-[300px] items-center justify-center overflow-hidden md:w-[600px]">
           <motion.div
-            animate={{ x: ['0%', '-40%'] }}
+            animate={{ x: ['0%', '-100%'] }}
             transition={{
               repeat: Infinity,
               repeatType: 'loop',
