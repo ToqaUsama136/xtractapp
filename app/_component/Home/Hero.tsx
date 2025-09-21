@@ -4,22 +4,8 @@ import Button from '../ui/Button';
 export default function Hero() {
   return (
     <>
-      <div className="mx-auto px-[20px] pt-[180px] pb-[100px] md:w-[600px] md:px-[40px] lg:w-[900px]">
-        {/* <div className="z-0 flex items-center justify-center">
-          <motion.img
-            src="/images/Big Circle.png"
-            alt="Big Circle"
-            animate={{ rotate: -360 }}
-            transition={{
-              repeat: Infinity,
-              repeatType: 'loop',
-              ease: 'linear',
-              duration: 3,
-            }}
-            className="bg-[#DF7AFE] p-2"
-          />
-        </div> */}
-        <div className="z-10 text-center">
+      <div className="mx-auto px-[20px] pt-[240px] pb-[100px] md:w-[600px] md:px-[40px] lg:w-[900px]">
+        <div className="relative z-50 text-center">
           <motion.p
             className="py-2 text-[30px] md:text-[60px]"
             initial={{ opacity: 0 }}
@@ -39,7 +25,6 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{
               delay: 1.4,
-
               duration: 0.6,
               ease: 'easeOut',
             }}
@@ -56,6 +41,10 @@ export default function Hero() {
             text={'View Services'}
             className="my-4 border border-[#a3a3a3b0]"
           />
+        </div>
+        <div className="relative bottom-[480px] left-[210px] mx-auto">
+          <div className="absolute inset-0 z-0 h-[406px] w-[406px] animate-[spin_8s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
+          <div className="animate-spin-reverse absolute inset-0 top-[60px] left-[40px] z-10 h-[250px] w-[250px] animate-[spin_4s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
         </div>
       </div>
     </>

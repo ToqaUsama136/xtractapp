@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 export default function CardSale() {
   return (
-    <div className="rounded-[5px] border border-[#a3a3a3b0] px-4 text-[12px]">
+    <div className="my-2 rounded-[5px] border border-[#a3a3a3b0] px-4 text-[12px]">
       <div className="my-4 flex">
         <div>
           <Image src="/images/Graphic.svg" alt="user" width={24} height={24} />
         </div>
-        <div className="mx-2 -mt-2 pl-2">
+        <div className="-mt-2 px-1 pl-2">
           <p>Jack Dainel</p>
           <p>Founder</p>
         </div>

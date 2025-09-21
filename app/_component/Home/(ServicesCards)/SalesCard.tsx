@@ -1,13 +1,13 @@
 import { motion } from 'motion/react';
-import { RxReload } from 'react-icons/rx';
+import { PiCircleNotch } from 'react-icons/pi';
 import CardSale from './CardSale';
 
 export default function SalesCard() {
   return (
     <div className="rounded-[10px] bg-[#0D0D0D] px-[50px] pt-[30px]">
       <div className="flex flex-col justify-center rounded-[6px] bg-[#000000] px-[20px] py-[20px]">
-        <div className="flex justify-between rounded-[6px] border border-[#a3a3a3b0] px-4 py-4">
-          <p>Email Sending</p>
+        <div className="flex justify-between rounded-[6px] border border-[#a3a3a3b0] px-4 py-2 text-[12px]">
+          <p>E-mail Sending..</p>
           <motion.div
             animate={{ rotate: 360 }}
             transition={{
@@ -15,9 +15,8 @@ export default function SalesCard() {
               duration: 1,
               ease: 'linear',
             }}
-            className="h-[25px] w-[25px]"
           >
-            <RxReload className="text-3xl text-purple-600" />
+            <PiCircleNotch className="h-[20px] w-[20px] text-3xl text-purple-600" />
           </motion.div>
         </div>
         <div className="py-2 text-[13px]">
@@ -32,8 +31,21 @@ export default function SalesCard() {
           </span>
         </div>
 
-        <div>
-          <CardSale />
+        <div className="h-[120px] overflow-hidden">
+          <motion.div
+            animate={{ y: ['0', '-50%'] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: 'loop',
+              duration: 15,
+              ease: 'linear',
+            }}
+          >
+            <CardSale />
+            <CardSale />
+            <CardSale />
+            <CardSale />
+          </motion.div>
         </div>
       </div>
     </div>

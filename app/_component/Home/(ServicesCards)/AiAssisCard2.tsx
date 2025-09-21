@@ -35,9 +35,17 @@ export default function AiAssisCard2() {
         </div>
 
         <div className="rounded-[6px] border border-[#222222] px-4">
-          <Typewriter words={['  Generate a invoice']} />
+          <Typewriter
+            words={[
+              '  Generate a invoice',
+              'Schedule a 30 day content',
+              'Provide me full report',
+            ]}
+            loop={true}
+            cursor
+          />
           <LuSendHorizontal className="-mt-4 ml-[220px] text-[#814AC8]" />
-          <div className="py-2">
+          <div className="py-2 text-[12px]">
             <span className="rounded-[16px] border border-[#222222] px-1">
               <span className="text-[#814AC8]">+</span>
               Add documents

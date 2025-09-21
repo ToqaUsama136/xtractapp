@@ -1,4 +1,5 @@
 import DescCard from '../../ui/DescCard';
+import CustomCard from './CustomCard';
 
 export default function CustomProject() {
   return (
@@ -15,7 +16,9 @@ export default function CustomProject() {
             strategic consulting and develop custom AI projects aligned with your unique goals."
           />
         </div>
-        <div className="max-w-[450px] flex-1"></div>
+        <div className="max-w-[450px] flex-1">
+          <CustomCard />
+        </div>
       </div>
     </section>
   );
