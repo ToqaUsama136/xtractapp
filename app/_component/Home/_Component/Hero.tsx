@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'motion/react';
-import Button from '../ui/Button';
+import Button from '../../ui/Button';
 export default function Hero() {
   return (
     <>
@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
         <div className="relative bottom-[480px] left-[210px] mx-auto">
           <div className="absolute inset-0 z-0 h-[406px] w-[406px] animate-[spin_8s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
-          <div className="animate-spin-reverse absolute inset-0 top-[60px] left-[40px] z-10 h-[250px] w-[250px] animate-[spin_4s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
+          <div className="animate-spin-reverse absolute inset-0 top-[60px] left-[80px] z-10 h-[250px] w-[250px] animate-[spin_3s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
         </div>
       </div>
     </>

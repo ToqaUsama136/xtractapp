@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'motion/react';
-import Button from '../../ui/Button';
+import Button from '../../../ui/Button';
 import CardWorkFlow from './CardWorkFlow';
 
 export default function WorkFlowCard1() {

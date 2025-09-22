@@ -1,4 +1,4 @@
-import DescCard from '../../ui/DescCard';
+import DescCard from '../../../ui/DescCard';
 import CustomCard from './CustomCard';
 
 export default function CustomProject() {

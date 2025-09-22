@@ -1,10 +1,10 @@
 import TitleCard from '../ui/TitleCard';
-import AiAssiss from './(ServicesCards)/AiAssiss';
-import CustomProject from './(ServicesCards)/CustomProject';
-import SalesMarketing from './(ServicesCards)/SalesMarketing';
-import WorkFlow from './(ServicesCards)/WorkFlow';
-import Hero from './Hero';
-import Logos from './Logos';
+import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
+import CustomProject from './_Component/(ServicesCards)/CustomProject';
+import SalesMarketing from './_Component/(ServicesCards)/SalesMarketing';
+import WorkFlow from './_Component/(ServicesCards)/WorkFlow';
+import Hero from './_Component/Hero';
+import Logos from './_Component/Logos';
 
 export default function Landing() {
   return (

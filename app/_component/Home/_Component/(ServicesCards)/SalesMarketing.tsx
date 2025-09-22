@@ -1,5 +1,5 @@
 'use client';
-import DescCard from '../../ui/DescCard';
+import DescCard from '../../../ui/DescCard';
 import SalesCard from './SalesCard';
 
 export default function SalesMarketing() {

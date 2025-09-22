@@ -1,4 +1,4 @@
-import DescTitle from '../../ui/DescCard';
+import DescTitle from '../../../ui/DescCard';
 import WorkFlowCard1 from './WorkFlowCard1';
 
 export default function WorkFlow() {

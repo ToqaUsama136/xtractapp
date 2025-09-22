@@ -1,4 +1,4 @@
-import DescTitle from '../../ui/DescCard';
+import DescTitle from '../../../ui/DescCard';
 import AiAssisCard2 from './AiAssisCard2';
 
 export default function AiAssiss() {
