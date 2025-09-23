@@ -3,7 +3,7 @@ import LogoTicker from '../LogoTicker';
 
 export default function SlidesCard() {
   return (
-    <div className="flex w-full flex-col justify-center px-8 py-4 md:w-1/2">
+    <div className="flex w-full flex-col justify-center overflow-hidden py-4 md:w-1/2 md:px-8">
       <div className="ml-[-25px]">
         <LogoTicker />
       </div>

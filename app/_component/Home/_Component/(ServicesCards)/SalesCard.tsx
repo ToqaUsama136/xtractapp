@@ -1,3 +1,4 @@
+'use client';
 import { motion } from 'motion/react';
 import { PiCircleNotch } from 'react-icons/pi';
 import CardSale from './CardSale';

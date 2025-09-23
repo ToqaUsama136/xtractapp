@@ -15,7 +15,7 @@ export default function Slides() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <AnimatePresence mode="wait">
         {current === 0 && (
           <motion.div
@@ -25,8 +25,8 @@ export default function Slides() {
             exit={{ x: '-100%', opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="mx-[150px] my-[100px] flex flex-col justify-center gap-8 md:flex-row">
-              <div>
+            <div className="mx-[50px] my-[100px] overflow-hidden lg:mx-[150px]">
+              <div className="flex flex-col justify-center gap-8 md:flex-row">
                 <div className="flex w-full justify-center overflow-hidden px-2 py-2 md:w-1/2">
                   <Image
                     src="/images/slide1.png"
@@ -49,8 +49,8 @@ export default function Slides() {
             exit={{ x: '-100%', opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="mx-[150px] my-[100px] flex flex-col justify-center gap-8 md:flex-row">
-              <div>
+            <div className="mx-[50px] my-[100px] overflow-hidden lg:mx-[150px]">
+              <div className="flex flex-col justify-center gap-8 md:flex-row">
                 <div className="flex w-full justify-center overflow-hidden px-2 py-2 md:w-1/2">
                   <Image
                     src="/images/slide1.png"

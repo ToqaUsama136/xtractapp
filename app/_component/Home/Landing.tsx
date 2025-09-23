@@ -1,4 +1,5 @@
 import TitleCard from '../ui/TitleCard';
+import Benfits from './_Component/(Benfits)/Benfits';
 import Slides from './_Component/(Cases)/Slides';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
@@ -29,6 +30,7 @@ export default function Landing() {
         text2="See how AI automation streamlines operations, boosts and drives growth."
       />
       <Slides />
+      <Benfits />
     </div>
   );
 }
