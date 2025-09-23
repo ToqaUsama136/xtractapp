@@ -1,4 +1,5 @@
 import TitleCard from '../ui/TitleCard';
+import Slides from './_Component/(Cases)/Slides';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
 import SalesMarketing from './_Component/(ServicesCards)/SalesMarketing';
@@ -21,6 +22,13 @@ export default function Landing() {
       <AiAssiss />
       <SalesMarketing />
       <CustomProject />
+
+      <TitleCard
+        textButton="Cases Stadius"
+        text1="See How Smart AI Automation Transforms Businesses"
+        text2="See how AI automation streamlines operations, boosts and drives growth."
+      />
+      <Slides />
     </div>
   );
 }
