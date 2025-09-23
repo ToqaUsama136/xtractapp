@@ -3,7 +3,7 @@ import { PiCircleNotch } from 'react-icons/pi';
 
 export default function Card4() {
   return (
-    <div className="m-4 flex items-center gap-2 rounded-[5px] border border-[#222222] px-2 py-1">
+    <div className="m-2 flex items-center gap-2 rounded-[5px] border border-[#222222] px-2 py-1 lg:m-4">
       <span className="flex h-[28px] w-[28px] items-center justify-center rounded-[5px] bg-[#222222]">
         <CiChat1 />
       </span>

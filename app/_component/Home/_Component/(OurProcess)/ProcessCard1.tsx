@@ -9,7 +9,7 @@ export default function ProcessCard1() {
         p2="Smart Analyzing"
         p3="We assess your needs and identify AI solutions to streamline workflows and improve efficiency."
       />
-      <div className="mx-[30px] flex justify-center gap-2 py-[20px]">
+      <div className="mx-[10px] flex justify-center gap-2 py-[20px] lg:mx-[30px]">
         <div className="flex w-full flex-col items-center justify-center border border-[#222222] px-4">
           <div className="relative h-[101px] w-[101px] animate-[spin_6s_linear_infinite] rounded-full border border-[#222222] bg-[conic-gradient(from_0deg,_#814AC8_0deg_35deg,_#814AC800_20deg_360deg)]" />
           <p className="py-4 text-[12px]">Analyzing current workflow..</p>

@@ -10,7 +10,7 @@ export default function TittleProcess({ p1, p2, p3 }: Props) {
         {p1}
       </p>
       <p className="text-[23px]">{p2}</p>
-      <p className="w-[380px]">{p3}</p>
+      <p className="text-[16px] lg:w-[380px]">{p3}</p>
     </div>
   );
 }

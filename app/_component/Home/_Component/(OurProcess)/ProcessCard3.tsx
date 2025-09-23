@@ -26,7 +26,7 @@ export default function ProcessCard3() {
         p2="Seamless Integration"
         p3="We smoothly integrate AI solutions into your existing infrastructure with minimal disruption."
       />
-      <div className="mx-[60px] my-[50px] flex justify-between border border-[#222222] px-[50px] py-[30px]">
+      <div className="mx-[30px] my-[50px] flex justify-between border border-[#222222] px-[10px] py-[30px] lg:mx-[60px] lg:px-[50px]">
         <div className="relative h-[74px] w-[74px] rounded-[5px] border border-[#222222]">
           <motion.img
             src="/images/Big circle1.png"

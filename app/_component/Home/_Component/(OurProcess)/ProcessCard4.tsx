@@ -9,7 +9,7 @@ export default function ProcessCard4() {
         p2="Continuous Optimization"
         p3="We refine performance, analyze insights, and enhance automation for long-term growth."
       />
-      <div className="mx-[40px] my-[20px] border border-[#222222]">
+      <div className="mx-[4px] my-[20px] border border-[#222222] lg:mx-[40px]">
         <Card4 />
         <Card4 />
         <Card4 />

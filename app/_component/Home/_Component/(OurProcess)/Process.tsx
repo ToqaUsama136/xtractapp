@@ -13,7 +13,7 @@ export default function Process() {
         textButton="Our Process"
       />
 
-      <div className="mx-[250px] my-[100px] grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-[40px] my-[100px] grid grid-cols-1 gap-4 md:grid-cols-2 lg:mx-[250px] lg:gap-8">
         <ProcessCard1 />
         <ProcessCard2 />
         <ProcessCard3 />
