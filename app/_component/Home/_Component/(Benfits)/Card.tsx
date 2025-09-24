@@ -7,7 +7,7 @@ type Props = {
 };
 export default function Card({ Icon, title, desc }: Props) {
   return (
-    <div className="bg-gradient-radial relative w-[360px] overflow-hidden rounded-[5px] border border-[#222222] px-4 py-4">
+    <div className="relative w-[360px] overflow-hidden rounded-[5px] border border-[#222222] px-4 py-4">
       {' '}
       <div
         className="absolute bottom-[-100px] left-1/2 h-[200px] w-[400px] -translate-x-1/2"

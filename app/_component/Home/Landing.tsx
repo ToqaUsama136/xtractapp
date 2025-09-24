@@ -1,5 +1,6 @@
 import TitleCard from '../ui/TitleCard';
 import Benfits from './_Component/(Benfits)/Benfits';
+import Business from './_Component/(Business)/Business';
 import Slides from './_Component/(Cases)/Slides';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
@@ -31,6 +32,7 @@ export default function Landing() {
       />
       <Slides />
       <Benfits />
+      <Business />
     </div>
   );
 }
