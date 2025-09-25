@@ -3,6 +3,7 @@ import Benfits from './_Component/(Benfits)/Benfits';
 import Business from './_Component/(Business)/Business';
 import Slides from './_Component/(Cases)/Slides';
 import Faqs from './_Component/(Faqs)/Faqs';
+import Pricing from './_Component/(Pricing)/Pricing';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
 import SalesMarketing from './_Component/(ServicesCards)/SalesMarketing';
@@ -33,6 +34,7 @@ export default function Landing() {
       />
       <Slides />
       <Benfits />
+      <Pricing />
       <Business />
       <Faqs />
     </div>

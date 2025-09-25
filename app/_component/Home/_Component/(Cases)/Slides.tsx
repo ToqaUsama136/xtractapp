@@ -15,7 +15,7 @@ export default function Slides() {
   }, []);
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <AnimatePresence mode="wait">
         {current === 0 && (
           <motion.div
