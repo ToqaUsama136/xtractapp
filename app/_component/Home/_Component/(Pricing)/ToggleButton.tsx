@@ -1,9 +1,10 @@
 'use client';
-import { useState } from 'react';
 
-export default function ToggleButton() {
-  const [isAnnual, setIsAnnual] = useState(false);
-
+type Props = {
+  isAnnual: boolean;
+  setIsAnnual: (value: boolean) => void;
+};
+export default function ToggleButton({ isAnnual, setIsAnnual }: Props) {
   return (
     <div className="flex items-center justify-center gap-4">
       <span className={` ${!isAnnual ? 'text-white' : 'text-[#cccccc]'}`}>

@@ -1,5 +1,6 @@
 import { FaRobot } from 'react-icons/fa';
 import { PiCircleNotch, PiSlidersHorizontalLight } from 'react-icons/pi';
+import { SlCalender } from 'react-icons/sl';
 
 export default function CustomCard() {
   return (
@@ -10,7 +11,7 @@ export default function CustomCard() {
           <p className="text-[10px]">Here is your Custom project & schedule</p>
         </div>
         <div className="rounded-[10px] border border-[#222222] pt-2">
-          <div className="flex items-center">
+          <div className="flex items-center px-2">
             <PiSlidersHorizontalLight /> <span>On going project:</span>
           </div>
           <div className="mx-2 my-2 flex items-center rounded-[10px] border border-[#222222] py-2">
@@ -22,6 +23,21 @@ export default function CustomCard() {
               <p className="text-[10px] whitespace-nowrap">90% Finsihed</p>
             </div>
             <PiCircleNotch className="ml-[120px]" />
+          </div>
+          <div className="mx-2 my-2 flex flex-col rounded-[10px] border border-[#222222] px-2 py-2">
+            <div className="flex items-center gap-2">
+              <SlCalender />
+              <p>Schedule</p>
+            </div>
+            <div className="flex gap-2">
+              <p>Mo</p>
+              <p>Tu</p>
+              <p>We</p>
+              <p>Th</p>
+              <p>Fr</p>
+              <p>Sa</p>
+              <p>Su</p>
+            </div>
           </div>
         </div>
       </div>

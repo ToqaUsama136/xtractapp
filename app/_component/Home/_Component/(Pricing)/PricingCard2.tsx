@@ -1,8 +1,17 @@
 import Button from '@/app/_component/ui/Button';
 import UlPricing from '@/app/_component/ui/UlPricing';
 import { FaBoltLightning } from 'react-icons/fa6';
-
-export default function PricingCard2() {
+type Props = {
+  isAnnual: boolean;
+  monthlyPrice: string;
+  annualPrice: string;
+};
+export default function PricingCard2({
+  isAnnual,
+  monthlyPrice,
+  annualPrice,
+}: Props) {
+  const displayPrice = isAnnual ? annualPrice : monthlyPrice;
   return (
     <div className="relative overflow-hidden rounded-[8px] border border-[#222222] px-[30px] py-[20px]">
       <div className="absolute bottom-1/2 left-0 -z-10 h-full w-full bg-[radial-gradient(circle_at_center,_#814AC845,_#0d0d0d)]" />
@@ -16,7 +25,7 @@ export default function PricingCard2() {
           />
         </div>
         <p className="py-4">
-          <span className="text-[30px]">$75</span> /months
+          <span className="text-[30px]">{displayPrice}</span> /months
         </p>
         <p className="py-4">
           Perfect for small businesses starting with AI automation.
