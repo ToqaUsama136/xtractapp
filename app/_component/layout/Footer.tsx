@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-[#222222]">
       <div className="absolute -top-1/2 left-1/2 -z-10 flex -translate-x-1/2 justify-center">
-        <div className="h-[300px] w-[1200px] rounded-full bg-[radial-gradient(circle,_#814AC830_0%,_rgba(0,0,0,0)_70%)]" />
+        <div className="h-[575px] w-[1200px] rounded-full bg-[radial-gradient(circle,_#814AC830_0%,_rgba(0,0,0,0)_70%)]" />
       </div>
       <div className="grid grid-cols-1 gap-10 px-8 py-[60px] md:grid-cols-2">
         <div className="flex flex-col items-start">
