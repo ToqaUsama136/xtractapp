@@ -1,4 +1,5 @@
 import TitleCard from '../ui/TitleCard';
+import Process from './_Component/(OurProcess)/Process';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
 import SalesMarketing from './_Component/(ServicesCards)/SalesMarketing';
@@ -21,6 +22,7 @@ export default function Landing() {
       <AiAssiss />
       <SalesMarketing />
       <CustomProject />
+      <Process />
     </div>
   );
 }

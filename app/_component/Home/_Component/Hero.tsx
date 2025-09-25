@@ -12,7 +12,6 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{
               delay: 1.2,
-
               duration: 0.6,
               ease: 'easeOut',
             }}
@@ -42,7 +41,7 @@ export default function Hero() {
             className="my-4 border border-[#a3a3a3b0]"
           />
         </div>
-        <div className="relative bottom-[480px] left-[210px] mx-auto">
+        <div className="relative bottom-[400px] left-[40px] mx-auto md:bottom-[480px] md:left-[100px] lg:left-[210px]">
           <div className="absolute inset-0 z-0 h-[406px] w-[406px] animate-[spin_8s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
           <div className="animate-spin-reverse absolute inset-0 top-[60px] left-[80px] z-10 h-[250px] w-[250px] animate-[spin_3s_linear_infinite] rounded-full bg-[linear-gradient(135deg,_#B866E6_0%,_rgba(255,255,255,0)_30%,_rgba(255,255,255,0)_70%,_#894ECC_79%,_#DF7AFE_100%)]" />
         </div>
