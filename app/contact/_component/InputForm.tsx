@@ -5,8 +5,8 @@ type FormProps = {
 };
 export default function InputForm({ label, type, placeholder }: FormProps) {
   return (
-    <div className="mx-4 flex flex-col py-4">
-      <label className="">{label}</label>
+    <div className="mx-4 flex flex-col py-2">
+      <label className="py-2">{label}</label>
       <input
         type={type}
         name={label}
