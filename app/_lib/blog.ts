@@ -7,7 +7,7 @@ export type BlogData = {
 
 export const Blog: BlogData[] = [
   {
-    img: '/images/Blog1.png',
+    img: '/images/blog1.png',
     link: '#',
     btn: 'Article',
     text: 'The Future of AI Automation: How It’s Changing Business Operations',
