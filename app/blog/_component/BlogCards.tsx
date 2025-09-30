@@ -1,6 +1,6 @@
 'use client';
 import Button from '@/app/_component/ui/Button';
-import { Blog } from '@/app/_lib/blog';
+import { blog } from '@/app/_lib/blog';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
@@ -8,8 +8,8 @@ export default function BlogCards() {
   return (
     <div className="mx-[20px] pt-6 pb-[120px] lg:mx-[300px]">
       <div className="grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2 md:flex-row">
-        {Blog.map((item, index) => (
-          <Link href={item.link} key={index}>
+        {blog.map((item, index) => (
+          <Link href={`pages/${item.id}`} key={index}>
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30, filter: 'blur(4px)' }}
