@@ -3,6 +3,7 @@ import TitleCard from '../_component/ui/TitleCard';
 import OurValue from './_component/OurValue';
 import OutTeam from './_component/OutTeam';
 import WhoWeAre from './_component/WhoWeAre';
+import WhyUs from './_component/WhyUs';
 
 export default function page() {
   return (
@@ -15,6 +16,7 @@ export default function page() {
       <Logos />
       <WhoWeAre />
       <OurValue />
+      <WhyUs />
       <OutTeam />
     </div>
   );

@@ -1,4 +1,5 @@
 'use client';
+import Button from '@/app/_component/ui/Button';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { AiOutlineLinkedin } from 'react-icons/ai';
@@ -17,7 +18,15 @@ export default function CardTeam() {
         }}
         viewport={{ once: true, amount: 0.6 }}
       >
-        <div className="flex flex-col rounded-[8px] border border-[#222222] px-[20px] py-[20px]">
+        <div className="relative flex flex-col rounded-[8px] border border-[#222222] px-[20px] py-[20px]">
+          <a
+            href="https://www.linkedin.com/in/alex-carter"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-3 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <Button text="View In Linkedin" withArrow />
+          </a>
           <Image
             src="/images/team1.png"
             alt="person"
