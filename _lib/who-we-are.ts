@@ -6,7 +6,7 @@ export type Props = {
   desc: string;
 };
 
-export const WhoAre: Props[] = [
+export const whoAre: Props[] = [
   {
     icon: PiChartBarFill,
     title: '150+ Businesses',

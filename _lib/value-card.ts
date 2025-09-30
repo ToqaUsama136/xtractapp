@@ -6,7 +6,7 @@ export type Props = {
   desc: string;
 };
 
-export const ValueCard: Props[] = [
+export const valueCard: Props[] = [
   {
     icons: GoRocket,
     title: ' Empowering Business Growth',
