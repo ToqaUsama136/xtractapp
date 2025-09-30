@@ -1,6 +1,6 @@
 export default function FooterLink() {
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+    <div className="s grid grid-cols-2 gap-6 md:grid-cols-3">
       {' '}
       <div>
         <p className="pb-2 text-[18px]">Links</p>
