@@ -9,7 +9,7 @@ export type CardProps = {
   title: string;
 };
 
-export const BusinessCard: CardProps[] = [
+export const businessCard: CardProps[] = [
   {
     icons: FaStar,
     desc: 'We provided AI-driven workflow automation, reducing manual tasks and improving efficiency across teams.',

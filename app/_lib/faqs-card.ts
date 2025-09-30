@@ -2,7 +2,7 @@ type FaqsProps = {
   question: string;
   answer: string;
 };
-export const FaqsCard: FaqsProps[] = [
+export const faqsCard: FaqsProps[] = [
   {
     question: 'How can AI automation help my business?',
     answer:

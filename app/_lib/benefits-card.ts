@@ -5,7 +5,7 @@ export type BenefitProps = {
   title: string;
   desc: string;
 };
-export const BenefitsCard = [
+export const benefitsCard = [
   {
     icon: FaHandshake,
     title: 'Increased Productivity',

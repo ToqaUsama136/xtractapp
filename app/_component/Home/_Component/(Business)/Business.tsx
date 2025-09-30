@@ -1,5 +1,5 @@
 import TitleCard from '@/app/_component/ui/TitleCard';
-import { BusinessCard } from '@/app/_lib/business-card';
+import { businessCard } from '@/app/_lib/business-card';
 import Card from './Card';
 export default function Business() {
   return (
@@ -11,7 +11,7 @@ export default function Business() {
       />
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:px-[80px] lg:px-[250px]">
-        {BusinessCard.map((item, index) => (
+        {businessCard.map((item, index) => (
           <Card
             key={index}
             title={item.title}
