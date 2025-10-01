@@ -6,27 +6,33 @@ export default function Hero() {
     <>
       <div className="mx-auto px-[20px] pt-[240px] pb-[100px] md:w-[600px] md:px-[40px] lg:w-[900px]">
         <div className="relative z-50 text-center">
-          <motion.p
+          <motion.div
             className="py-2 text-[30px] md:text-[60px]"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 30, filter: 'blur(30px)' }}
+            whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{
+              type: 'spring',
+              duration: 2.2,
               delay: 1.2,
               duration: 0.6,
               ease: 'easeOut',
+              bounce: 0.2,
             }}
+            viewport={{ once: true, amount: 0.6 }}
           >
             Intelligent Automation for Modern Businesses.
-          </motion.p>
+          </motion.div>
           <motion.p
             className="py-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 30, filter: 'blur(30px)' }}
+            whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{
+              type: 'spring',
+              duration: 2.2,
               delay: 1.4,
-              duration: 0.6,
-              ease: 'easeOut',
+              bounce: 0.2,
             }}
+            viewport={{ once: true, amount: 0.6 }}
           >
             Xtract brings AI automation to your fingertips & streamline tasks.
           </motion.p>
