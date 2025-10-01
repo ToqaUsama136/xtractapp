@@ -12,7 +12,7 @@ export default function CardContact() {
         transition={{
           type: 'spring',
           duration: 0.8,
-          delay: 1.4,
+          delay: 0.8,
           bounce: 0.2,
         }}
         viewport={{ once: true, amount: 0.6 }}

@@ -10,7 +10,7 @@ export default function Contact() {
         whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
         transition={{
           type: 'spring',
-          duration: 2.2,
+          duration: 1.2,
           delay: 1.4,
           bounce: 0.2,
         }}
