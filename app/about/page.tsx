@@ -1,3 +1,4 @@
+import Faqs from '../_component/Home/_Component/(Faqs)/Faqs';
 import Logos from '../_component/Home/_Component/Logos';
 import TitleCard from '../_component/ui/TitleCard';
 import OurValue from './_component/OurValue';
@@ -18,6 +19,7 @@ export default function page() {
       <OurValue />
       <WhyUs />
       <OutTeam />
+      <Faqs />
     </div>
   );
 }
