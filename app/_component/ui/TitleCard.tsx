@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import Button from '../ui/Button';
 
 type CardProps = {
@@ -11,21 +11,18 @@ export default function TitleCard({ textButton, text1, text2 }: CardProps) {
   return (
     <section>
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        className="mx-auto mt-[150px] mb-[100px] flex max-w-[600px] flex-col items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
-          type: 'spring',
-          duration: 2.2,
-          delay: 0.4,
-          bounce: 0.2,
+          delay: 1.2,
+          duration: 0.6,
+          ease: 'easeOut',
         }}
-        viewport={{ once: true, amount: 0.6 }}
       >
-        <div className="mx-auto my-[50px] flex max-w-[600px] flex-col items-center justify-center">
-          <Button text={textButton} className="border border-[#a3a3a3b0]" />
-          <p className="py-4 text-center text-[30px] md:text-[50px]">{text1}</p>
-          <p className="text-center md:text-[18px]">{text2}</p>
-        </div>
+        <Button text={textButton} className="border border-[#a3a3a3b0]" />
+        <p className="py-4 text-center text-[50px] font-bold">{text1}</p>
+        <p className="text-center md:text-[18px]">{text2}</p>
       </motion.div>
     </section>
   );

@@ -1,6 +1,5 @@
 import TitleCard from '@/app/_component/ui/TitleCard';
-
-import { FaqsCard } from '@/_lib/faqs-card';
+import { faqsCard } from '@/app/_lib/faqs-card';
 import Card from '../(Faqs)/Card';
 import Cta from './Cta';
 export default function Faqs() {
@@ -13,7 +12,7 @@ export default function Faqs() {
       />
       <div className="relative md:mx-[80px] lg:mx-[400px]">
         <div className="flex flex-col gap-4 py-4">
-          {FaqsCard.map((item, index) => (
+          {faqsCard.map((item, index) => (
             <Card key={index} question={item.question} answer={item.answer} />
           ))}
         </div>

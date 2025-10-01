@@ -1,6 +1,8 @@
+'use client';
 import { motion } from 'motion/react';
 import { PiCircleNotch } from 'react-icons/pi';
 import CardSale from './CardSale';
+import ProgressSales from './ProgressSale';
 
 export default function SalesCard() {
   return (
@@ -59,6 +61,7 @@ export default function SalesCard() {
             </motion.div>
           </div>
         </div>
+        <ProgressSales />
       </motion.div>
     </div>
   );

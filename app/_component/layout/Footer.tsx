@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="absolute -top-1/2 left-1/2 -z-10 flex -translate-x-1/2 justify-center">
         <div className="h-[575px] w-[1200px] rounded-full bg-[radial-gradient(circle,_#814AC830_0%,_rgba(0,0,0,0)_70%)]" />
       </div>
-      <div className="grid grid-cols-1 gap-10 px-40 py-[40px] md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-10 px-20 py-[40px] md:grid-cols-2 lg:px-40">
         <div className="flex flex-col items-start">
           <div className="flex justify-center gap-2">
             <Image src="/images/logo.svg" alt="logo" width={30} height={30} />

@@ -1,4 +1,10 @@
 import TitleCard from '../ui/TitleCard';
+import Process from './_Component/(OurProcess)/Process';
+import Benfits from './_Component/(Benfits)/Benfits';
+import Business from './_Component/(Business)/Business';
+import Slides from './_Component/(Cases)/Slides';
+import Faqs from './_Component/(Faqs)/Faqs';
+import Pricing from './_Component/(Pricing)/Pricing';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
 import SalesMarketing from './_Component/(ServicesCards)/SalesMarketing';
@@ -21,6 +27,17 @@ export default function Landing() {
       <AiAssiss />
       <SalesMarketing />
       <CustomProject />
+      <Process />
+      <TitleCard
+        textButton="Cases Stadius"
+        text1="See How Smart AI Automation Transforms Businesses"
+        text2="See how AI automation streamlines operations, boosts and drives growth."
+      />
+      <Slides />
+      <Benfits />
+      <Pricing />
+      <Business />
+      <Faqs />
     </div>
   );
 }
