@@ -6,7 +6,7 @@ import LogoTicker from './LogoTicker';
 export default function Logos() {
   return (
     <>
-      <div className="mx-[100px] my-[100px] flex flex-col items-center justify-center">
+      <div className="mx-[100px] my-[100px] flex flex-col items-center justify-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

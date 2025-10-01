@@ -15,15 +15,15 @@ export default function NavLinks() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="flex md:hidden">
+      <div className="flex bg-black md:hidden">
         {open && (
-          <ul className="absolute top-16 left-10 flex w-full flex-col gap-4 md:hidden">
+          <ul className="absolute top-16 left-10 z-100 flex w-full flex-col gap-4 bg-black md:hidden">
             {links.map((link) => (
               <NavLi key={link.label} href={link.href} link={link.label} />
             ))}
             <Button
               text={'Book a call'}
-              className={'mr-8 bg-[#814AC8]'}
+              className={'mr-20 bg-[#814AC8]'}
               withArrow
             />
           </ul>

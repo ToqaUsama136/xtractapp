@@ -33,25 +33,45 @@ export default function ProcessCard2() {
             <IoIosSearch />
             <PiPuzzlePieceLight />
           </div>
-          <div className="h-[140px] w-[340px] px-2 pt-2">
+          <div className="h-[140px] w-[340px] overflow-hidden px-2 pt-2">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-[12px]"
+              animate={{ y: ['0%', '-50%'] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: 'loop',
+                duration: 15,
+                ease: 'linear',
+              }}
+              className="px-8 py-4 text-[12px] whitespace-pre"
             >
-              {`class AutomationTrigger: 
-                      def __init__(self, threshold):  
-                                      self.threshold = threshold 
-                                                        self.status = "inactive" 
-                                                                  def check_trigger(self, value):   
-                                                                                  if value > self.threshold:      
-                                                                                                   self.status = "active"    
-                                                                                                                       return "Automation triggered!"    
-                                                                                                                                       else:          
-                                                                                                                                                       return "No action taken."    
-                                                                                                                                                              def get_status(self):    
-                                                                                                                                                                             return f"Status: {self.status}"`}
+              {`class AutomationTrigger:
+    def __init__(self, threshold):
+        self.threshold = threshold
+        self.status = "inactive"
+
+    def check_trigger(self, value):
+        if value > self.threshold:
+            self.status = "active"
+            return "Automation triggered!"
+        else:
+            return "No action taken."
+
+    def get_status(self):
+        return f"Status: {self.status}"`}
+              {`class AutomationTrigger:
+    def __init__(self, threshold):
+        self.threshold = threshold
+        self.status = "inactive"
+
+    def check_trigger(self, value):
+        if value > self.threshold:
+            self.status = "active"
+            return "Automation triggered!"
+        else:
+            return "No action taken."
+
+    def get_status(self):
+        return f"Status: {self.status}"`}
             </motion.div>
           </div>
         </div>

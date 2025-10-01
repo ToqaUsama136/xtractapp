@@ -5,6 +5,7 @@ export default function Benfits() {
   return (
     <div>
       <TitleCard
+        direction="vertical"
         text1="The Key Benefits of AI  for Your Business Growth"
         text2="Discover how AI automation enhances efficiency, reduces costs, and drives business growth with smarter, faster processes."
         textButton="Benefits"
