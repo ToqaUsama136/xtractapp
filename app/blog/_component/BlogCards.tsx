@@ -16,8 +16,8 @@ export default function BlogCards() {
               whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{
                 type: 'spring',
-                duration: 2.2,
-                delay: 1.4,
+                duration: 1.2,
+                delay: 0.8,
                 bounce: 0.2,
               }}
               viewport={{ once: true, amount: 0.6 }}
@@ -26,7 +26,7 @@ export default function BlogCards() {
                 <motion.img
                   src={item.img}
                   alt={item.btn}
-                  className="h-[250px] w-full rounded-lg object-cover"
+                  className="-mt-[100px] mb-[20px] h-[350px] w-full rounded-lg object-cover"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 />
