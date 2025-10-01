@@ -21,7 +21,7 @@ export default function TitleCard({ textButton, text1, text2 }: CardProps) {
         }}
       >
         <Button text={textButton} className="border border-[#a3a3a3b0]" />
-        <p className="py-4 text-center text-[30px] md:text-[50px]">{text1}</p>
+        <p className="py-4 text-center text-[50px] font-bold">{text1}</p>
         <p className="text-center md:text-[18px]">{text2}</p>
       </motion.div>
     </section>
