@@ -14,7 +14,6 @@ export default function Hero() {
               type: 'spring',
               duration: 2.2,
               delay: 1.2,
-              duration: 0.6,
               ease: 'easeOut',
               bounce: 0.2,
             }}
