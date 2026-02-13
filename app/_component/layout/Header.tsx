@@ -3,7 +3,7 @@ import NavLinks from '../ui/NavLinks';
 
 export default function Header() {
   return (
-    <header>
+    <header className="fixed top-0 left-0 z-50 w-full bg-black">
       <div className="flex items-center justify-between px-[40px] py-[10px] md:h-[65px]">
         <div className="flex justify-center gap-2">
           <Image src="/images/logo.svg" alt="logo" width={30} height={30} />
@@ -21,6 +21,7 @@ export default function Header() {
           </button>
         </div>
       </div>
+      <hr className="border border-[#0d0d0d]" />
     </header>
   );
 }

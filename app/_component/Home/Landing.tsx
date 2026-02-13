@@ -1,9 +1,9 @@
 import TitleCard from '../ui/TitleCard';
-import Process from './_Component/(OurProcess)/Process';
 import Benfits from './_Component/(Benfits)/Benfits';
 import Business from './_Component/(Business)/Business';
 import Slides from './_Component/(Cases)/Slides';
 import Faqs from './_Component/(Faqs)/Faqs';
+import Process from './_Component/(OurProcess)/Process';
 import Pricing from './_Component/(Pricing)/Pricing';
 import AiAssiss from './_Component/(ServicesCards)/AiAssiss';
 import CustomProject from './_Component/(ServicesCards)/CustomProject';
@@ -22,6 +22,7 @@ export default function Landing() {
         text1="  AI Solutions That Take Your Business to the Next Level"
         text2=" We design, develop, and implement automation tools that help you work
           smarter, not harder"
+        direction="vertical"
       />
       <WorkFlow />
       <AiAssiss />
@@ -29,6 +30,7 @@ export default function Landing() {
       <CustomProject />
       <Process />
       <TitleCard
+        direction="vertical"
         textButton="Cases Stadius"
         text1="See How Smart AI Automation Transforms Businesses"
         text2="See how AI automation streamlines operations, boosts and drives growth."

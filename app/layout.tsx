@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-
 import Footer from './_component/layout/Footer';
 import Header from './_component/layout/Header';
+import Button from './_component/ui/Button';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -19,6 +19,14 @@ export default function RootLayout({
       <body className="bg-[#0a0a0a] text-[#ededed]">
         <Header />
         {children}
+        <div className="fixed right-0 bottom-6 z-50 flex flex-col gap-4">
+          <Button text="Use For Free" className="ml-8 bg-[#814AC9]" withArrow />
+          <Button
+            text="Another Ai templete"
+            className="border border-[#222222]"
+            withArrow
+          />
+        </div>
         <Footer />
       </body>
     </html>
